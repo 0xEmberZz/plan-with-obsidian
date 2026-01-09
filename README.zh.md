@@ -18,24 +18,10 @@
 
 ## 安装
 
-### 选项 1: 克隆仓库（推荐）
-
 ```bash
 # 克隆并创建软链接
 git clone https://github.com/0xEmberZz/plan-with-obsidian.git
 ln -s "$(pwd)/plan-with-obsidian" ~/.claude/skills/
-```
-
-### 选项 2: 下载 .skill 文件
-
-从 [Releases](../../releases) 下载 `plan-with-obsidian.skill` 并安装：
-
-```bash
-# 复制到 Claude Code skills 目录
-cp plan-with-obsidian.skill ~/.claude/skills/
-
-# 或解压到 skills 目录
-unzip plan-with-obsidian.skill -d ~/.claude/skills/
 ```
 
 ## 快速开始
@@ -80,7 +66,7 @@ unzip plan-with-obsidian.skill -d ~/.claude/skills/
 ## 要求
 
 - Claude Code（支持 skills）
-- Obsidian（可选，但推荐使用以获得完整特性）
+- [Obsidian](https://obsidian.md/)（可选，但推荐使用以获得完整特性）
 
 ## 最佳实践
 
