@@ -1,0 +1,224 @@
+{
+  "nodes": [
+    {
+      "id": "project-goal",
+      "type": "text",
+      "x": 800,
+      "y": -400,
+      "width": 700,
+      "height": 200,
+      "color": "6",
+      "text": "# 🎯 Project Goal\n\n**{{title}}**\n\n[Fill in project goals and success metrics here]"
+    },
+    {
+      "id": "doc-task-plan",
+      "type": "file",
+      "file": "Planning/{{safe_title}} - Task Plan.md",
+      "x": 200,
+      "y": 0,
+      "width": 350,
+      "height": 140,
+      "color": "1"
+    },
+    {
+      "id": "doc-findings",
+      "type": "file",
+      "file": "Planning/{{safe_title}} - Findings.md",
+      "x": 800,
+      "y": 0,
+      "width": 350,
+      "height": 140,
+      "color": "3"
+    },
+    {
+      "id": "doc-progress",
+      "type": "file",
+      "file": "Planning/{{safe_title}} - Progress.md",
+      "x": 1400,
+      "y": 0,
+      "width": 350,
+      "height": 140,
+      "color": "5"
+    },
+    {
+      "id": "phase1",
+      "type": "text",
+      "x": -400,
+      "y": 500,
+      "width": 380,
+      "height": 350,
+      "color": "2",
+      "text": "# 📋 Phase 1\n\n**Status**: ⏳ Pending\n\n## Task Checklist\n- [ ] Task 1\n- [ ] Task 2\n- [ ] Task 3\n\n[Customize phase content in Task Plan]"
+    },
+    {
+      "id": "phase2",
+      "type": "text",
+      "x": 200,
+      "y": 500,
+      "width": 380,
+      "height": 350,
+      "color": "2",
+      "text": "# 📋 Phase 2\n\n**Status**: ⏳ Pending\n\n## Task Checklist\n- [ ] Task 1\n- [ ] Task 2\n- [ ] Task 3\n\n[Customize phase content in Task Plan]"
+    },
+    {
+      "id": "phase3",
+      "type": "text",
+      "x": 800,
+      "y": 500,
+      "width": 380,
+      "height": 350,
+      "color": "2",
+      "text": "# 📋 Phase 3\n\n**Status**: ⏳ Pending\n\n## Task Checklist\n- [ ] Task 1\n- [ ] Task 2\n- [ ] Task 3\n\n[Customize phase content in Task Plan]"
+    },
+    {
+      "id": "phase4",
+      "type": "text",
+      "x": 1400,
+      "y": 500,
+      "width": 380,
+      "height": 350,
+      "color": "2",
+      "text": "# 📋 Phase 4\n\n**Status**: ⏳ Pending\n\n## Task Checklist\n- [ ] Task 1\n- [ ] Task 2\n- [ ] Task 3\n\n[Customize phase content in Task Plan]"
+    },
+    {
+      "id": "phase5",
+      "type": "text",
+      "x": 2000,
+      "y": 500,
+      "width": 380,
+      "height": 350,
+      "color": "2",
+      "text": "# 📋 Phase 5\n\n**Status**: ⏳ Pending\n\n## Task Checklist\n- [ ] Task 1\n- [ ] Task 2\n- [ ] Task 3\n\n[Customize phase content in Task Plan]"
+    },
+    {
+      "id": "tech-stack",
+      "type": "text",
+      "x": -400,
+      "y": 1100,
+      "width": 480,
+      "height": 280,
+      "color": "1",
+      "text": "# 🔧 Tech Stack\n\n[Record project tech stack here]\n\n**Database**:\n- \n\n**Backend**:\n- \n\n**Frontend**:\n- "
+    },
+    {
+      "id": "architecture",
+      "type": "text",
+      "x": 300,
+      "y": 1100,
+      "width": 600,
+      "height": 280,
+      "color": "6",
+      "text": "# 🏗️ Architecture Design\n\n[Describe system architecture here]\n\n**Core Components**:\n- \n\n**Data Flow**:\n- "
+    },
+    {
+      "id": "key-decisions",
+      "type": "text",
+      "x": 1120,
+      "y": 1100,
+      "width": 560,
+      "height": 280,
+      "color": "3",
+      "text": "# 💡 Key Decisions\n\n[Record important technical decisions during work]\n\n- **Decision 1**: Rationale\n- **Decision 2**: Rationale"
+    },
+    {
+      "id": "current-status",
+      "type": "text",
+      "x": 1900,
+      "y": 1100,
+      "width": 480,
+      "height": 340,
+      "color": "5",
+      "text": "# 📊 Current Status\n\n**Phase**: Phase 1\n\n**Completed**:\n- ✅ Initialized planning documents\n\n**Next Step**: Customize Task Plan"
+    }
+  ],
+  "edges": [
+    {
+      "id": "goal-to-taskplan",
+      "fromNode": "project-goal",
+      "fromSide": "bottom",
+      "toNode": "doc-task-plan",
+      "toSide": "top"
+    },
+    {
+      "id": "goal-to-findings",
+      "fromNode": "project-goal",
+      "fromSide": "bottom",
+      "toNode": "doc-findings",
+      "toSide": "top"
+    },
+    {
+      "id": "goal-to-progress",
+      "fromNode": "project-goal",
+      "fromSide": "bottom",
+      "toNode": "doc-progress",
+      "toSide": "top"
+    },
+    {
+      "id": "taskplan-to-phase1",
+      "fromNode": "doc-task-plan",
+      "fromSide": "bottom",
+      "toNode": "phase1",
+      "toSide": "top"
+    },
+    {
+      "id": "phase1-to-phase2",
+      "fromNode": "phase1",
+      "fromSide": "right",
+      "toNode": "phase2",
+      "toSide": "left",
+      "label": "→"
+    },
+    {
+      "id": "phase2-to-phase3",
+      "fromNode": "phase2",
+      "fromSide": "right",
+      "toNode": "phase3",
+      "toSide": "left",
+      "label": "→"
+    },
+    {
+      "id": "phase3-to-phase4",
+      "fromNode": "phase3",
+      "fromSide": "right",
+      "toNode": "phase4",
+      "toSide": "left",
+      "label": "→"
+    },
+    {
+      "id": "phase4-to-phase5",
+      "fromNode": "phase4",
+      "fromSide": "right",
+      "toNode": "phase5",
+      "toSide": "left",
+      "label": "→"
+    },
+    {
+      "id": "findings-to-decisions",
+      "fromNode": "doc-findings",
+      "fromSide": "bottom",
+      "toNode": "key-decisions",
+      "toSide": "top"
+    },
+    {
+      "id": "progress-to-status",
+      "fromNode": "doc-progress",
+      "fromSide": "bottom",
+      "toNode": "current-status",
+      "toSide": "top"
+    },
+    {
+      "id": "phase2-to-architecture",
+      "fromNode": "phase2",
+      "fromSide": "bottom",
+      "toNode": "architecture",
+      "toSide": "top"
+    },
+    {
+      "id": "phase1-to-tech",
+      "fromNode": "phase1",
+      "fromSide": "bottom",
+      "toNode": "tech-stack",
+      "toSide": "top"
+    }
+  ]
+}

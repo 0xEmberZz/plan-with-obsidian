@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Obsidian
+.obsidian/
+
+# Example output (don't commit generated planning files)
+obsidian-plan/
+
+# Backup files
+*.bak
+*~
+
+# Temporary files
+*.tmp
+.temp/
