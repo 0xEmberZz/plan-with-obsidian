@@ -18,7 +18,15 @@ Create planning documents directly in your Obsidian vault with wikilinks, proper
 
 ## Installation
 
-### Option 1: Download .skill File (Recommended)
+### Option 1: Clone Repository (Recommended)
+
+```bash
+# Clone and symlink
+git clone https://github.com/0xEmberZz/plan-with-obsidian.git
+ln -s "$(pwd)/plan-with-obsidian" ~/.claude/skills/
+```
+
+### Option 2: Download .skill File
 
 Download `plan-with-obsidian.skill` from [Releases](../../releases) and install:
 
@@ -28,14 +36,6 @@ cp plan-with-obsidian.skill ~/.claude/skills/
 
 # Or unzip to skills directory
 unzip plan-with-obsidian.skill -d ~/.claude/skills/
-```
-
-### Option 2: Clone Repository
-
-```bash
-# Clone and symlink
-git clone https://github.com/0xEmberZz/plan-with-obsidian.git
-ln -s "$(pwd)/plan-with-obsidian" ~/.claude/skills/
 ```
 
 ## Quick Start
